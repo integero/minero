@@ -3,10 +3,12 @@ package com;
 public class Main {
 
     public static void main(String[] args) {
-//  In the future is it necessary put args[0] instead of 0 & run Minero with one arg
+//        select interface & have enjoi
+//        int gameInterface=0;  //  game in console
+        int gameInterface=1;    //  GUI game
         PreGame st = new PreGame();
         if (args.length == 0)
-            st.startGame(args, 1);
+            st.startGame(args, gameInterface);
         else{
             try {
                 int i = Integer.parseInt(args[0]);
