@@ -6,7 +6,7 @@ common
     Cell.java
     CellImages.java
     FieldOfGame.java
-GaI.java                        announcing of interfaces
+    GaI.java                    announcing of interfaces
     GaM.java                    common methods
     GaP.java                    common game parameters
     USA.java                    coordinates & action in the step of game
