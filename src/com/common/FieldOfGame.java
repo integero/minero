@@ -1,4 +1,4 @@
-package com.integero.common;
+package com.common;
 
 public class FieldOfGame {
     public static Cell[][] field;

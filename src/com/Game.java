@@ -1,6 +1,6 @@
-package com.integero;
+package com;
 
-import com.integero.common.*;
+import com.common.*;
 
 class Game {
     static void run() {

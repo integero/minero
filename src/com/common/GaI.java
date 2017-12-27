@@ -1,8 +1,9 @@
-package com.integero.common;
+package com.common;
 
-import com.integero.interfaces.IUserChoice;
-import com.integero.interfaces.IUserRequest;
-import com.integero.interfaces.IViewField;
+
+import com.interfaces.IUserChoice;
+import com.interfaces.IUserRequest;
+import com.interfaces.IViewField;
 
 //  list of interfaces
 public class GaI {

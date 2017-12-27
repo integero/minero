@@ -1,9 +1,9 @@
-package com.integero.gui;
+package com.gui;
 
-import com.integero.common.FieldOfGame;
-import com.integero.common.GaM;
-import com.integero.common.GaP;
-import com.integero.interfaces.IViewField;
+import com.common.FieldOfGame;
+import com.common.GaM;
+import com.common.GaP;
+import com.interfaces.IViewField;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 

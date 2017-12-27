@@ -1,4 +1,4 @@
-package com.integero.interfaces;
+package com.interfaces;
 
 public interface IUserRequest {
     //  query for int from range [lBoumd, rBound

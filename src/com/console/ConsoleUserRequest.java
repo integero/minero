@@ -1,6 +1,7 @@
-package com.integero.console;
+package com.console;
 
-import com.integero.interfaces.IUserRequest;
+
+import com.interfaces.IUserRequest;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,6 +1,6 @@
-package com.integero.gui;
+package com.gui;
 
-import com.integero.interfaces.IUserRequest;
+import com.interfaces.IUserRequest;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextInputDialog;
 

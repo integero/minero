@@ -1,4 +1,4 @@
-package com.integero.common;
+package com.common;
 
 //  logic-methods for Game
 public class GaM {

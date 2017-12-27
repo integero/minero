@@ -1,9 +1,9 @@
-package com.integero.gui;
+package com.gui;
 
-import com.integero.common.Cell;
-import com.integero.common.FieldOfGame;
-import com.integero.common.USA;
-import com.integero.interfaces.IUserChoice;
+import com.common.Cell;
+import com.common.FieldOfGame;
+import com.common.USA;
+import com.interfaces.IUserChoice;
 import javafx.scene.Node;
 import javafx.scene.input.MouseButton;
 

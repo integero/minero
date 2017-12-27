@@ -1,12 +1,12 @@
-package com.integero;
+package com;
 
-import com.integero.common.FieldOfGame;
-import com.integero.common.GaI;
-import com.integero.common.GaP;
-import com.integero.console.ConsoleUserChoice;
-import com.integero.console.ConsoleUserRequest;
-import com.integero.console.ConsoleView;
-import com.integero.gui.*;
+import com.common.FieldOfGame;
+import com.common.GaI;
+import com.common.GaP;
+import com.console.ConsoleUserChoice;
+import com.console.ConsoleUserRequest;
+import com.console.ConsoleView;
+import com.gui.*;
 
 import static javafx.application.Application.launch;
 

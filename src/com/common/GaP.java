@@ -1,4 +1,4 @@
-package com.integero.common;
+package com.common;
 
 //  common parameters
 public class GaP {

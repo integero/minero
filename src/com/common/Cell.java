@@ -1,4 +1,4 @@
-package com.integero.common;
+package com.common;
 
 //  I think nearly all is clear
 public class Cell {

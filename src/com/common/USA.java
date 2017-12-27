@@ -1,4 +1,4 @@
-package com.integero.common;
+package com.common;
 
 //  User Step Action request - (i,j) cell coordinates, flag = true - (un)mark cell, = fale - open CELL
 public class USA {

@@ -1,6 +1,6 @@
-package com.integero.gui;
+package com.gui;
 
-import com.integero.PreGame;
+import com.PreGame;
 import javafx.application.Application;
 import javafx.stage.Stage;
 

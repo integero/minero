@@ -1,6 +1,6 @@
-package com.integero.interfaces;
+package com.interfaces;
 
-import com.integero.common.USA;
+import com.common.USA;
 
 //  User Step Choice Let you see class USA
 public interface IUserChoice {

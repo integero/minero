@@ -1,7 +1,8 @@
-package com.integero.console;
+package com.console;
 
-import com.integero.common.*;
-import com.integero.interfaces.IUserChoice;
+
+import com.common.*;
+import com.interfaces.IUserChoice;
 
 //  choice of coorditates & action
 public class ConsoleUserChoice implements IUserChoice {

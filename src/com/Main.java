@@ -1,4 +1,4 @@
-package com.integero;
+package com;
 
 public class Main {
 

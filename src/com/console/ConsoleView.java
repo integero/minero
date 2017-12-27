@@ -1,7 +1,8 @@
-package com.integero.console;
+package com.console;
 
-import com.integero.common.*;
-import com.integero.interfaces.IViewField;
+
+import com.common.*;
+import com.interfaces.IViewField;
 
 //  outputting the FieldOfGame to the console
 public class ConsoleView implements IViewField {

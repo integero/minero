@@ -1,7 +1,7 @@
-package com.integero.gui;
+package com.gui;
 
-import com.integero.common.CellImages;
-import com.integero.common.GaP;
+import com.common.CellImages;
+import com.common.GaP;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
