@@ -1,3 +1,5 @@
+                Попытка выполнить задание task.PNG
+
 Main.java                       class with main method
 PreGame.java                    preparation for game for current interface
 Game.java                       main logic of game
@@ -12,21 +14,21 @@ common
     USA.java                    coordinates & action in the step of game
 
 console
-    ConsoleUserChoice.java      choice of coordinates & action set to USA
+    ConsoleUserChoice.java      choice of coordinates & action & set them to USA
     ConsoleUserRequest.java     asking user for game parameters & step choice
     ConsoleView.java            send image of gameField to console
 
 gui                             components for GUI interface
     GuiLaunch.java              GUI environment LAUNCH
-    GuiO.java                   initiation GUI components
-    GuiUserChoice.java          choice of coordinates & action set to USA
+    GuiObj.java                 initiation of GUI components
+    GuiUserChoice.java          choice of coordinates & action & set them to USA
     GuiUserRequest.java         asking user for game parameters
     GuiView.java                send image of gameField to GUI
 
-interfaces                      no comments
-    IUserChoice.java
-    IUserRequest.java
-    IViewField.java
+interfaces
+    IUserChoice.java            player choice
+    IUserRequest.java           communication with the player
+    IViewField.java             visualization of the game field
 
 resource                        images for GUI cells
     1.jpg
@@ -38,9 +40,9 @@ resource                        images for GUI cells
     7.jpg
     8.jpg
     9.jpg
-    bigBomb.jpg
+    bigMine.jpg
     exploited.jpg
     flag.jpg
     open.jpg
     notOpen.jpg
-    smallBomb.jpg
+    smallMine.jpg               for future

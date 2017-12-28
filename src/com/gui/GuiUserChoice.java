@@ -17,10 +17,10 @@ public class GuiUserChoice implements IUserChoice {
 //  for window close detection
         i = -1;
         j = -1;
-//  let listen GuiO.canvas
+//  let listen GuiObj.canvas
         while (true) {
-            addTranslateListener(GuiO.canvas);
-            GuiO.stage.showAndWait();
+            addTranslateListener(GuiObj.canvas);
+            GuiObj.stage.showAndWait();
             if (i < 0 && j < 0) {
                 System.exit(0);
             }
@@ -40,7 +40,7 @@ public class GuiUserChoice implements IUserChoice {
             j = (int) event.getX() / 30;
             i = (int) event.getY() / 30;
             flag = event.getButton() == MouseButton.SECONDARY;
-            GuiO.stage.hide();
+            GuiObj.stage.hide();
         });
 
     }

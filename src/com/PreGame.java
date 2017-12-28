@@ -13,7 +13,7 @@ import static javafx.application.Application.launch;
 //  game preparing for different interfaces
 public class PreGame {
     //  two steps start Game - args - from method main, GameInterface = 0 - consoleGame, = 1 - guiGame
-    void startGame(String[] args, int gameInterface) {
+    void startGame(int gameInterface) {
         if (gameInterface < 0 || gameInterface > 1) {
             throw new Error("!!!!!!!!!!!!!!   WRONG INTERFACE CHOICE   !!!!!!!!!!!" + "\n\n");
         }
@@ -43,13 +43,13 @@ public class PreGame {
         GaP.sizeOfField = GaI.iUserRequest.getIntAnswerFromGamer("input field size:", GaP.minFieldSize, GaP.maxFieldSize);
 //  set amount of bombs less then half of amount of cells
         int maxAmountOfBombs = GaP.sizeOfField * GaP.sizeOfField / 2;
-        GaP.amountOfMines = GaI.iUserRequest.getIntAnswerFromGamer("input amount of bombs: ", GaP.minBombs, maxAmountOfBombs);
-        GaP.notOpenCellsWithoutBombs = GaP.sizeOfField * GaP.sizeOfField - GaP.amountOfMines;
+        GaP.amountOfMines = GaI.iUserRequest.getIntAnswerFromGamer("input amount of bombs: ", GaP.minMines, maxAmountOfBombs);
+        GaP.notOpenCellsWithoutMines = GaP.sizeOfField * GaP.sizeOfField - GaP.amountOfMines;
         GaP.blast = false;
 //  gameField initialisation
         new FieldOfGame(GaP.sizeOfField, GaP.amountOfMines);
 //  jump to initialisation of elements for GUI interface if it was chosen
-        if (GaP.gameInterface == 1) new GuiO();
+        if (GaP.gameInterface == 1) new GuiObj();
 //  game start
         Game.run();
     }

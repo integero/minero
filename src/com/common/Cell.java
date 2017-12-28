@@ -4,11 +4,12 @@ package com.common;
 public class Cell {
     private boolean isMarked;
     private boolean isOpen;
-    private boolean hasBomb;
+    private boolean hasMine;
     //  for future - my be possible blast some mines before death use only here
     private boolean isBlast;
-    //  number of bombs near cell
-    private int nOfBombsNear = 0;
+    //  number of mines near cell. determined at the beginning of the game.
+    //  determine the image of an open cell
+    private int nOfMinesNear = 0;
 
     //  for future
     boolean isBlast() {
@@ -20,27 +21,27 @@ public class Cell {
         isBlast = true;
     }
 
-    int getNBombsAround() {
-        return nOfBombsNear;
+    int getNMinesAround() {
+        return nOfMinesNear;
     }
 
     //  for initial fieldOfGame mining
-    void anotherBombNearby() {
-        this.nOfBombsNear++;
+    void anotherMineNearby() {
+        this.nOfMinesNear++;
     }
 
     //  only for UNseccess finish -> for final view
-    public void setnOfBombsNear(int nomOfBlastImage) {
-        this.nOfBombsNear = nomOfBlastImage;
+    public void setnOfMinesNear(int nomOfBlastImage) {
+        this.nOfMinesNear = nomOfBlastImage;
     }
 
-    public boolean hasBomb() {
-        return hasBomb;
+    public boolean hasMine() {
+        return hasMine;
     }
 
     //  for initial fieldOfGame mining
-    void setHasBomb() {
-        this.hasBomb = true;
+    void setHasMine() {
+        this.hasMine = true;
     }
 
     public boolean isOpen() {
@@ -49,7 +50,7 @@ public class Cell {
 
     //  at current time after opening cell with mine should the explosion
     public void setOpen() {
-        if (hasBomb) {
+        if (hasMine) {
             GaP.blast = true;
             isBlast = true;
         }

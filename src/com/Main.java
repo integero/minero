@@ -8,7 +8,7 @@ public class Main {
         int gameInterface=1;    //  GUI game
         PreGame st = new PreGame();
         if (args.length == 0)
-            st.startGame(args, gameInterface);
+            st.startGame(gameInterface);
         else{
             try {
                 int i = Integer.parseInt(args[0]);

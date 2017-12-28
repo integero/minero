@@ -1,9 +1,9 @@
 package com.common;
 
-//    W,w - blast & nonblast bombs - outputafter explosion
-//    @ - opened & nonblast bomb
+//    W,w - blast & nonblast mines - outputafter explosion
+//    @ - opened & nonblast mine
 //    X - notopen cell, F - marked cell
-//    N - amount of bombs near
+//    N - amount of mines near
 //    : - opened
 public class CellImages {
     public static String[][] cIm = {
@@ -24,8 +24,8 @@ public class CellImages {
                     "com/resource/9.jpg",
                     "com/resource/notOpen.jpg",
                     "com/resource/flag.jpg",
-                    "com/resource/smallBomb.jpg",
-                    "com/resource/bigBomb.jpg",
+                    "com/resource/smallMine.jpg",
+                    "com/resource/bigMine.jpg",
                     "com/resource/exploited.jpg"}
     };
 }

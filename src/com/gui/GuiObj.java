@@ -11,7 +11,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 //  components for graphic interface
-public class GuiO {
+public class GuiObj {
     static Group root;
     static Scene scene;
     static Canvas canvas;
@@ -20,7 +20,7 @@ public class GuiO {
     //  graphic images for different cell type
     static Image[] pictForCells;
 
-    public GuiO() {
+    public GuiObj() {
         root = new Group();
         scene = new Scene(root, GaP.sizeOfField * 30 + 5, GaP.sizeOfField * 30 + 5, Color.BLACK);
         canvas = new Canvas(GaP.sizeOfField * 30 + 5, GaP.sizeOfField * 30 + 5);
