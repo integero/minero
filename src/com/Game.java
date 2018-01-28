@@ -38,7 +38,7 @@ class Game {
         }
         GaI.iViewField.view();
 
-        if (GaI.iUserRequest.getIntAnswerFromGamer("\nOnes more?? 0 - yes: ", 0, 9) == 0) {
+        if (GaI.iUserRequest.getIntAnswerFromGamer("\nOnes more?? 0 - yes: ", 0, 9,true) == 0) {
 //      close current Platform before opening new game
 //          restart game
             PreGame.nextStep();

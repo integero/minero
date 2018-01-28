@@ -7,14 +7,13 @@ public class Main {
 //        int gameInterface=0;  //  game in console
         int gameInterface=1;    //  GUI game
         PreGame st = new PreGame();
-        if (args.length == 0)
-            st.startGame(gameInterface);
-        else{
+        if (args.length != 0) {
             try {
-                int i = Integer.parseInt(args[0]);
+                gameInterface = Integer.parseInt(args[0]);
             } catch (NumberFormatException e) {
                 System.out.println("%n!!!!!!!!     ARGUMENT FOR MAIN METOD MUST BE DIGIT    !!!!!!!%n");
             }
         }
+        st.startGame(gameInterface);
     }
 }

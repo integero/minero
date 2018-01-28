@@ -40,10 +40,10 @@ public class PreGame {
     //  second start step
     public static void nextStep() {
 //  parameters Input & calculate after startGame above
-        GaP.sizeOfField = GaI.iUserRequest.getIntAnswerFromGamer("input field size:", GaP.minFieldSize, GaP.maxFieldSize);
+        GaP.sizeOfField = GaI.iUserRequest.getIntAnswerFromGamer("input field size", GaP.minFieldSize, GaP.maxFieldSize,true);
 //  set amount of bombs less then half of amount of cells
         int maxAmountOfBombs = GaP.sizeOfField * GaP.sizeOfField / 2;
-        GaP.amountOfMines = GaI.iUserRequest.getIntAnswerFromGamer("input amount of bombs: ", GaP.minMines, maxAmountOfBombs);
+        GaP.amountOfMines = GaI.iUserRequest.getIntAnswerFromGamer("input amount of bombs ", GaP.minMines, maxAmountOfBombs,true);
         GaP.notOpenCellsWithoutMines = GaP.sizeOfField * GaP.sizeOfField - GaP.amountOfMines;
         GaP.blast = false;
 //  gameField initialisation

@@ -4,7 +4,7 @@ package com.console;
 import com.common.*;
 import com.interfaces.IUserChoice;
 
-//  choice of coorditates & action
+//  choice of coordinates & action
 public class ConsoleUserChoice implements IUserChoice {
     @Override
     public USA getUserChoice() {
@@ -15,9 +15,9 @@ public class ConsoleUserChoice implements IUserChoice {
         int nTimes = 3;
         while (nTimes > 0) {
 //  i,j - coordinates, flag=true - mark cell, otherwise - open
-            i = GaI.iUserRequest.getIntAnswerFromGamer("i:", 0, GaP.sizeOfField - 1);
-            j = GaI.iUserRequest.getIntAnswerFromGamer("j:", 0, GaP.sizeOfField - 1);
-            flag = GaI.iUserRequest.getIntAnswerFromGamer("0 - open | 1 - mark:", 0, 1) != 0;
+            i = GaI.iUserRequest.getIntAnswerFromGamer("i:", 0, GaP.sizeOfField - 1,false);
+            j = GaI.iUserRequest.getIntAnswerFromGamer("j:", 0, GaP.sizeOfField - 1,false);
+            flag = GaI.iUserRequest.getIntAnswerFromGamer("0 - open | 1 - mark:", 0, 1,false) != 0;
             Cell cc = FieldOfGame.field[i][j];
 
 //  cell isn't open & isn't mark. can do anything

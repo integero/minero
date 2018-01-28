@@ -12,18 +12,19 @@ public class ConsoleUserRequest implements IUserRequest {
 
     @Override
 //  ask - message for Gamer, left & right - bounds for answer
-    public int getIntAnswerFromGamer(String ask, int left, int right) {
+    public int getIntAnswerFromGamer(String ask, int left, int right,boolean warning) {
         int tmp = 0;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int nTimes = 3;
         while (nTimes > 0) {
             try {
+                if (warning) System.out.println("Input must be in range ["+left+":"+right+"]");
                 System.out.print(ask);
                 String ins = br.readLine();
                 tmp = (ins.length() == 0) ? 0 : Integer.parseInt(ins);
                 if (left <= tmp && tmp <= right) break;
-                throw new IOException();
+                throw new Exception();
             } catch (Exception e) {
                 System.out.println("Error! Input must be care!!! Repeat");
             }
@@ -31,7 +32,7 @@ public class ConsoleUserRequest implements IUserRequest {
         }
         if (nTimes > 0) return tmp;
 //  if number of attempts is grate then 3
-        throw new Error("!!!!!!!!!!!!!!   GAME  OVER   !!!!!!!!!!!" + "\n\n");
+        throw new Error("!!!!!!!!!!!!!!   GAME  OVER - be care with parameter choice  !!!!!!!!!!!" + "\n\n");
     }
 
     @Override

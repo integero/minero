@@ -10,11 +10,11 @@ import java.io.IOException;
 public class GuiUserRequest implements IUserRequest {
 
     @Override
-    public int getIntAnswerFromGamer(String ask, int lBound, int rBound) {
+    public int getIntAnswerFromGamer(String ask, int lBound, int rBound,boolean warning) {
         TextInputDialog ti = new TextInputDialog(lBound + "");
         ti.setHeaderText(null);
         ti.setContentText(ask);
-        ti.setTitle("answer must be in [" + lBound + " : " + rBound + "]");
+        if (warning) ti.setTitle("answer must be in [" + lBound + " : " + rBound + "]");
         int tmp = 0;
 
         int nTimes = 3;
